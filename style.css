@@ -1,25 +1,25 @@
 img {
-    width: 45px;
-    height: 45px;
+  width: 30px;
+  height: 30px;
 }
 
 .correct {
-    background-color: red;
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
+  background-color: red;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
 }
 
 .halfCorrect {
-    background-color: yellow;
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
+  background-color: yellow;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
 }
 
 .notCorrect {
-    background-color: lightgray;
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
+  background-color: lightgray;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
 }

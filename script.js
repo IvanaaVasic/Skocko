@@ -127,7 +127,7 @@ function createRow() {
 
   //<div class="col"></div>
   let praznaKolona = document.createElement("div");
-  praznaKolona.setAttribute("class", "col");
+  praznaKolona.setAttribute("class", "col ps-0");
   newRed.appendChild(praznaKolona);
 
   let potezi = document.getElementById("moves");
@@ -136,7 +136,7 @@ function createRow() {
 
 function addSymbol(idZnaka) {
   let el = document.createElement("div");
-  el.setAttribute("class", "col");
+  el.setAttribute("class", "col ps-0");
 
   let znak = znakovi[idZnaka];
   let slika = document.createElement("img");
@@ -154,7 +154,7 @@ function addRedCircles(brCrvenih) {
       </div> */
   for (let i = 0; i < brCrvenih; i++) {
     let el = document.createElement("div");
-    el.setAttribute("class", "col");
+    el.setAttribute("class", "col ps-0");
 
     el.innerHTML = ' <div class="correct"></div>';
     let red = document.querySelector(".row.mt-1.mb-1:last-child");
@@ -168,7 +168,7 @@ function addYellowCircles(brZutih) {
           </div> */
   for (let i = 0; i < brZutih; i++) {
     let el = document.createElement("div");
-    el.setAttribute("class", "col");
+    el.setAttribute("class", "col ps-0");
 
     el.innerHTML = ' <div class="halfCorrect"></div>';
     let red = document.querySelector(".row.mt-1.mb-1:last-child");
@@ -182,7 +182,7 @@ function addGreyCircles(brSivih) {
           </div> */
   for (let i = 0; i < brSivih; i++) {
     let el = document.createElement("div");
-    el.setAttribute("class", "col");
+    el.setAttribute("class", "col ps-0");
 
     el.innerHTML = ' <div class="notCorrect"></div>';
     let red = document.querySelector(".row.mt-1.mb-1:last-child");
@@ -193,7 +193,7 @@ function addGreyCircles(brSivih) {
 function addEmptyCol() {
   //<div class="col"></div>
   let praznaKolona = document.createElement("div");
-  praznaKolona.setAttribute("class", "col");
+  praznaKolona.setAttribute("class", "col ps-0");
   let red = document.querySelector(".row.mt-1.mb-1:last-child");
   red.appendChild(praznaKolona);
 }
