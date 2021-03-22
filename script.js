@@ -3,6 +3,10 @@ const znakovi = ["karo", "pik", "skocko", "srce", "tref", "zvezda"];
 let kombinacija = [];
 let trazenaKombinacija = [];
 
+function refreshPage() {
+  window.location.reload();
+}
+
 function generisiKombinaciju() {
   /* trazenaKombinacija = []
     for (let i = 0; i < 4; i++) {
