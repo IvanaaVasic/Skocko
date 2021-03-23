@@ -23,3 +23,10 @@ img {
   width: 30px;
   border-radius: 50%;
 }
+body {
+  background: url(slike/3632097.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

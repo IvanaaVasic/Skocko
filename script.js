@@ -132,7 +132,7 @@ function play(idZnaka) {
     if (brCrvenih == 4) {
       finishGame();
     }
-    if (brPoteza == 5) {
+    if (brPoteza == 6) {
       document.getElementById("doneGame").innerHTML =
         "Gotova igra, pokušajte ponovo";
       finished = true;
@@ -168,7 +168,7 @@ function addSymbol(idZnaka) {
 
   let znak = znakovi[idZnaka];
   let slika = document.createElement("img");
-  slika.setAttribute("src", "slike/" + znak + ".jpg");
+  slika.setAttribute("src", "slike/" + znak + ".png");
   //slika.src = "slike/tref.jpg";       nacin 2
 
   el.appendChild(slika);
