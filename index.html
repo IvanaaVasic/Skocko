@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Igra skocko</title>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
@@ -36,22 +36,22 @@
       </div>
       <div class="row">
         <div class="col">
-          <img src="slike/karo.jpg" onclick="play(0)" />
+          <img class="sign" src="slike/karo.jpg" onclick="play(0)" />
         </div>
         <div class="col">
-          <img src="slike/pik.jpg" onclick="play(1)" />
+          <img class="sign" src="slike/pik.jpg" onclick="play(1)" />
         </div>
         <div class="col">
-          <img src="slike/skocko.jpg" onclick="play(2)" />
+          <img class="sign" src="slike/skocko.jpg" onclick="play(2)" />
         </div>
         <div class="col">
-          <img src="slike/srce.jpg" onclick="play(3)" />
+          <img class="sign" src="slike/srce.jpg" onclick="play(3)" />
         </div>
         <div class="col">
-          <img src="slike/tref.jpg" onclick="play(4)" />
+          <img class="sign" src="slike/tref.jpg" onclick="play(4)" />
         </div>
         <div class="col">
-          <img src="slike/zvezda.jpg" onclick="play(5)" />
+          <img class="sign" src="slike/zvezda.jpg" onclick="play(5)" />
         </div>
       </div>
       <div class="row mt-5">
@@ -60,9 +60,19 @@
         </div>
       </div>
       <div id="moves"></div>
+      <div class="row mt-2">
+        <div class="col text-center">
+          <p id="ispis"></p>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col text-center">
+          <p id="doneGame"></p>
+        </div>
+      </div>
       <div class="row mt-5">
         <div class="col text-center" onClick="refreshPage()">
-          <button>Igraj ponovo</button>
+          <button type="button" class="btn btn-primary">Igraj ponovo</button>
         </div>
       </div>
     </div>

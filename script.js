@@ -2,6 +2,8 @@ const znakovi = ["karo", "pik", "skocko", "srce", "tref", "zvezda"];
 
 let kombinacija = [];
 let trazenaKombinacija = [];
+let finished = false;
+let brPoteza = 0;
 
 function refreshPage() {
   window.location.reload();
@@ -25,6 +27,10 @@ function generisiKombinaciju() {
 }
 
 function play(idZnaka) {
+  if (finished) {
+    return;
+  }
+
   //console.log("Korisnik igra potez " + znakovi[idZnaka]);
   kombinacija.push(idZnaka);
 
@@ -33,6 +39,7 @@ function play(idZnaka) {
   }
 
   if (kombinacija.length == 4) {
+    brPoteza++;
     addEmptyCol();
     let brCrvenih = 0;
     let brZutih = 0;
@@ -122,7 +129,24 @@ function play(idZnaka) {
       kombinacija.pop();
     }
     createRow();
+    if (brCrvenih == 4) {
+      finishGame();
+    }
+    if (brPoteza == 5) {
+      document.getElementById("doneGame").innerHTML =
+        "Gotova igra, pokušajte ponovo";
+      finished = true;
+    }
   }
+}
+
+function finishGame() {
+  var ispis = document.getElementById("ispis");
+  ispis.innerHTML = "Čestitke!";
+  ispis.style.color = "green";
+  ispis.style.fontWeight = "bold";
+  ispis.style.fontSize = "30px";
+  finished = true;
 }
 
 function createRow() {
